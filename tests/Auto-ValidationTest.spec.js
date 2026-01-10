@@ -4,7 +4,7 @@ import fs from 'fs';
 import yaml from 'yaml';
 
 // Load test cases from the YAML file using a relative path
-const file = fs.readFileSync('./config/testCases.yaml', 'utf8');
+const file = fs.readFileSync('./Config/testCases.yaml', 'utf8');
 const testCases = yaml.parse(file).testCases;
 
 test.describe('Bugs Form - Field Validation', () => {
