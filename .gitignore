@@ -1,0 +1,15 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+ ```
+  venv/
+  __pycache__/
+  .pytest_cache/
+  .DS_Store
+  ```

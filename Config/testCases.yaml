@@ -1,0 +1,60 @@
+testCases:
+  - name: "TC01: Test with Blank Last Name"
+    run: true
+    inputs:
+      firstName: "Roy"
+      lastName: ""
+      phoneNumber: "1234567890"
+      email: "john@test.com"
+      password: "Test@123"
+      country: "Togo"
+      terms: false
+    expectedSuccess: false
+
+  - name: "TC02: Test with Blank Email"
+    run: false
+    inputs:
+      firstName: "John"
+      lastName: "Test"
+      phoneNumber: "1234567890"
+      email: ""
+      password: "Test@123"
+      country: "Togo"
+      terms: true
+    expectedSuccess: false
+
+  - name: "TC03: First and Last Name are required"
+    run: true
+    inputs:
+      firstName: ""
+      lastName: ""
+      phoneNumber: "1234567890"
+      email: "john@test.com"
+      password: "Test@123"
+      country: "Togo"
+      terms: false
+    expectedSuccess: false
+
+  - name: "TC04: Incorrect Email ID"
+    run: true
+    inputs:
+      firstName: "Roy"
+      lastName: "Roy"
+      phoneNumber: "1234567890"
+      email: "invalid-email"
+      password: "Test@123"
+      country: "Togo"
+      terms: false
+    expectedSuccess: false
+
+  - name: "TC05: All fields are valid"
+    run: true
+    inputs:
+      firstName: "Test"
+      lastName: "Test"
+      phoneNumber: "9876543210"
+      email: "john.doe@test.com"
+      password: "Test@123"
+      country: "Togo"
+      terms: 
+    expectedSuccess: true
