@@ -2,7 +2,7 @@
 
 This project automates the testing of the Bugs Form using Playwright and Pytest. It uses the Page Object Model (POM) design pattern to organize the code for better maintainability. The project also integrates GitHub Workflows for automated test execution and dependency manageme 
 
-For Test 
+ For Test 
 
 ## Prerequisites
 
